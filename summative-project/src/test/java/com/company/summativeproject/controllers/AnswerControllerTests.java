@@ -26,19 +26,6 @@ public class AnswerControllerTests {
 
     private List<Answer> answers;
 
-    @BeforeEach
-    public void setup() {
-        String textOne = "Without a doubt";
-        String textTwo = "It is certain";
-        String textThree = "It is decidedly so";
-        String textFour = "Yes definitely";
-        String textFive = "My sources say no";
-        String textSix = "Ask again later";
-        String textSeven = "Concentrate and ask again";
-        String textEight = "Better not tell you now";
-
-    }
-
     @Test
     public void shouldReturnQuestionAnswerOnPost() throws Exception {
         String questionAsked = "Test input question?";
@@ -57,5 +44,10 @@ public class AnswerControllerTests {
                 .andDo(print())
                 .andExpect(status().isCreated())
                 .andExpect(content().json(inputJson));
+    }
+
+    @Test
+    public void shouldReturnDifferentAnswerEachRun() throws Exception {
+
     }
 }
