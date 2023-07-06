@@ -22,11 +22,6 @@ public class WordApiControllerTest {
     private ObjectMapper mapper = new ObjectMapper();
 
     private List<Definition> wordList;
-
-    @BeforeEach
-    public void setUp() {
-
-    }
     @Test
     public void shouldReturnRandomWordInList() throws Exception {
 
