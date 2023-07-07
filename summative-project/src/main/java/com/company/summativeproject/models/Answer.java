@@ -9,8 +9,8 @@ public class Answer {
     private String answer;
 
 
-    public Answer(String question) {
-        this.question = question;
+    public Answer() {
+        answer = "";
         id++;
     }
 

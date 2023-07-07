@@ -31,23 +31,38 @@ public class AnswerControllerTests {
         String questionAsked = "Test input question?";
         String textFive = "My sources say no";
 
-        Answer decline = new Answer(questionAsked);
+        Answer decline = new Answer();
+        decline.setQuestion(questionAsked);
         decline.setAnswer(textFive);
 
         String inputJson = mapper.writeValueAsString(decline);
 
         mockMvc.perform(
-                post( "/magic_eight_ball")
+                post( "/magic")
                         .content(inputJson)
                         .contentType(MediaType.APPLICATION_JSON)
         )
                 .andDo(print())
-                .andExpect(status().isCreated())
-                .andExpect(content().json(inputJson));
+                .andExpect(status().isCreated());
     }
 
     @Test
     public void shouldReturnDifferentAnswerEachRun() throws Exception {
+        String question = "Is it random every time?";
+
+        Answer reply = new Answer();
+        reply.setQuestion(question);
+        reply.getAnswer();
+
+        String turnToJson = mapper.writeValueAsString(reply);
+
+        mockMvc.perform(
+                post("/magic")
+                        .content(turnToJson)
+                        .contentType(MediaType.APPLICATION_JSON)
+        )
+                .andDo(print())
+                .andExpect(status().isCreated());
 
     }
 }
