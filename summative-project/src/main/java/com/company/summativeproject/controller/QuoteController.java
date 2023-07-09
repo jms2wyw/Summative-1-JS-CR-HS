@@ -44,7 +44,7 @@ public class QuoteController {
         // 3. Constructions of quoteList
         quoteList = new ArrayList<>();
         for (int id = 0; id < quotes.size(); id++) {
-            quoteList.add(new Quote(id, quotes.get(id), authors.get(id)));
+            quoteList.add(new Quote(id, authors.get(id), quotes.get(id)));
         }
     }
 
