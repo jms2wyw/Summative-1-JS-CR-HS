@@ -52,7 +52,6 @@ public class AnswerControllerTests {
 
         Answer reply = new Answer();
         reply.setQuestion(question);
-        reply.getAnswer();
 
         String turnToJson = mapper.writeValueAsString(reply);
 
