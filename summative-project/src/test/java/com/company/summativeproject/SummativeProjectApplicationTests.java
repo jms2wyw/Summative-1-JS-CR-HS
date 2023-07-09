@@ -9,5 +9,4 @@ class SummativeProjectApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
