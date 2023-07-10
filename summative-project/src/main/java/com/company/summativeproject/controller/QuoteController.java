@@ -51,14 +51,12 @@ public class QuoteController {
     // 2. RESTful API
     // (1) Get a quote
     @GetMapping("/quote")
-    public ResponseEntity<Quote> getARandomQuote() {
+    public Quote getARandomQuote() {
         // 1. Generate a random id
         Random rand = new Random();
         int randomID = rand.nextInt(quoteList.size());
 
-        // 2. Get a random Quote
-        Quote quote = quoteList.get(randomID);
-
-        return ResponseEntity.ok(quote);
+        // 2. Get a random Quote and return it
+        return quoteList.get(randomID);
     }
 }
