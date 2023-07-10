@@ -27,6 +27,5 @@ class QuoteControllerTest {
                         .contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk());
-                // TODO: quotes not null?
     }
 }
