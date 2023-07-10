@@ -9,9 +9,11 @@ import java.util.List;
 
 @RestController
 public class AnswerController {
-    List<String> possibleAnswers = new ArrayList<>();
+    List<String> possibleAnswers;
 
     public AnswerController() {
+        possibleAnswers = new ArrayList<>();
+
         String textOne = "Without a doubt";
         String textTwo = "It is certain";
         String textThree = "It is decidedly so";

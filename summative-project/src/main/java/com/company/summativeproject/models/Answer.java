@@ -1,8 +1,5 @@
 package com.company.summativeproject.models;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Answer {
     private static int id;
     private String question;
