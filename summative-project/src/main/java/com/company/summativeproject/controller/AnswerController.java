@@ -1,4 +1,4 @@
-package com.company.summativeproject.controllers;
+package com.company.summativeproject.controller;
 
 import com.company.summativeproject.models.Answer;
 import org.springframework.http.HttpStatus;
