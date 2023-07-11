@@ -1,6 +1,8 @@
-## Project: Summative Project 1: Spring Boot and REST
+## Project: 
+Summative Project 1: Spring Boot and REST
 
-## Authors: Chris Rojas, Jose Sanchez, Xiaowen Sun
+## Authors: 
+Chris Rojas, Jose Sanchez, Xiaowen Sun
 
 ## APIs:
 1. Answer - request a random answer to a question
