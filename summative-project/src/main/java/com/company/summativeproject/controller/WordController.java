@@ -9,12 +9,12 @@ import java.util.Random;
 import java.util.Arrays;
 import java.util.List;
 @RestController
-public class WordApiController {
+public class WordController {
     private List<Definition> wordList;
 
     Random rand = new Random();
 
-    public WordApiController() {
+    public WordController() {
 
 
         Definition audacity = new Definition();
