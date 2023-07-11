@@ -1,4 +1,4 @@
-package com.company.summativeproject.models;
+package com.company.summativeproject.model;
 
 public class Answer {
     private static int id;

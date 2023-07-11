@@ -1,4 +1,4 @@
-package com.company.summativeproject.models;
+package com.company.summativeproject.model;
 
 import java.util.Objects;
 
