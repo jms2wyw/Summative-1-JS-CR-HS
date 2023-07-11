@@ -6,7 +6,7 @@ Chris Rojas, Jose Sanchez, Xiaowen Sun
 
 ## APIs:
 1. Answer - request a random answer to a question
-2. Quote - request a random quote so that I can
+2. Quote - request a random quote
 3. Word - request a random word and its definition
 
 ## Demo Link:
