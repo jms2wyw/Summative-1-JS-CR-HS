@@ -1,5 +1,6 @@
 package com.company.summativeproject.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -23,8 +24,7 @@ class QuoteControllerTest {
 
     @Test
     void getARandomQuote() throws Exception {
-        mockMvc.perform(get("/quote")
-                        .contentType(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get("/quote"))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
